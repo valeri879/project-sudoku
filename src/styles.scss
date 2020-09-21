@@ -1,0 +1,15 @@
+/* Imports */
+
+@import "./styles/_fonts";
+@import "./styles/_variables";
+@import "./styles/controls";
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  font-family: 'Noto Sans', sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+}

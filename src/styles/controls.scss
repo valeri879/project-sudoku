@@ -1,0 +1,238 @@
+.btn {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(black, 0.3);
+  border-bottom-width: 3px;
+  transition: all 0.4s ease;
+  display: inline-flex;
+  flex-direction: row;
+
+  &:hover {
+    border-color: rgba(black, 0.5);
+
+    .switch {
+      border-color: rgba(black, 0.5);
+
+      .outer {
+        transition: all 0.4s ease;
+
+        .inner {
+          transition: all 0.4s ease;
+          border-color: rgba(black, 0.5);
+        }
+      }
+    }
+  }
+
+  &:active {
+    border-color: rgba(black, 0.9);
+
+    .switch {
+      border-color: rgba(black, 0.9);
+
+      .outer {
+        .inner {
+          border-color: rgba(black, 0.9);
+        }
+      }
+    }
+  }
+
+  .title {
+    margin: auto 0;
+  }
+
+  &.btn-toggle {
+    .switch {
+      display: block;
+      width: 24px;
+      height: 13px;
+      border: 1px solid rgba(black, 0.3);
+      overflow: hidden;
+      border-radius: 4px;
+      margin-left: 6px;
+
+      .outer {
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+        .inner {
+          border: 1px solid rgba(black, 0.3);
+          display: block;
+          border-radius: 2px;
+          width: 45%;
+          height: 65%;
+          margin: auto 1px;
+        }
+      }
+    }
+  }
+
+  &.btn-primary {
+    background-color: lighten($primary-background-color, 5%);
+    color: $primary-color;
+
+    .switch {
+      .outer {
+        .inner {
+          background-color: lighten($primary-background-color, 5%);
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $primary-background-color;
+
+      .switch {
+        .outer {
+          .inner {
+            background-color: $primary-background-color;
+          }
+        }
+      }
+    }
+    &:active {
+      background-color: darken($primary-background-color, 5%);
+
+      .switch {
+        .outer {
+          .inner {
+            background-color: darken($primary-background-color, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  &.btn-secondary {
+    background-color: lighten($secondary-background-color, 5%);
+    color: $secondary-color;
+
+    .switch {
+      .outer {
+        .inner {
+          background-color: lighten($secondary-background-color, 5%);
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $secondary-background-color;
+
+      .switch {
+        .outer {
+          .inner {
+            background-color: $secondary-background-color;
+          }
+        }
+      }
+    }
+    &:active {
+      background-color: darken($secondary-background-color, 5%);
+
+      .switch {
+        .outer {
+          .inner {
+            background-color: darken($secondary-background-color, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  &.btn-warning {
+    background-color: lighten($warning-background-color, 5%);
+    color: $warning-color;
+
+    .switch {
+      .outer {
+        .inner {
+          background-color: lighten($warning-background-color, 5%);
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $warning-background-color;
+
+      .switch {
+        .outer {
+          .inner {
+            background-color: $warning-background-color;
+          }
+        }
+      }
+    }
+    &:active {
+      background-color: darken($warning-background-color, 5%);
+
+      .switch {
+        .outer {
+          .inner {
+            background-color: darken($warning-background-color, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  &.toggle-off {
+    .switch {
+      .outer {
+        background-color: rgba(white, 0.6);
+      }
+    }
+  }
+
+  &.toggle-on {
+    .switch {
+      .outer {
+        background-color: rgba(white, 0.2);
+
+        .inner {
+          background-color: rgba(white, 0.3);
+          transform: translateX(80%);
+        }
+      }
+    }
+
+    &:hover {
+      .switch {
+        .outer {
+          .inner {
+            background-color: rgba(white, 0.5);
+          }
+        }
+      }
+    }
+
+    &:active {
+      .switch {
+        .outer {
+          .inner {
+            background-color: rgba(white, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    background-color: $disabled-background-color;
+    color: $disabled-color;
+    cursor: not-allowed;
+    border: 1px solid rgba(black, 0.1);
+    border-bottom-width: 3px;
+
+    .switch {
+      .outer {
+        .inner {
+          background-color: lighten($disabled-background-color, 5%);
+        }
+      }
+    }
+  }
+}

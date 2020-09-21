@@ -1,0 +1,13 @@
+  <div class="app-sudoku-container">
+  <div class="buttons">
+    <!-- <div class="left-buttons">
+      <app-toggle [click]="_toggleHints" [toggleValue]="hintsEnabled" type="secondary" title="Hint"></app-toggle>
+    </div> -->
+    <div class="right-buttons">
+      <app-btn [click]="_reset" [disabled]="!game.modified()" type="secondary" title="Reset"></app-btn>
+      <app-btn [click]="_new" type="primary" title="New"></app-btn>
+    </div>
+  </div>
+  <app-sudoku-board [game]="game"></app-sudoku-board>
+  <app-number-selector [game]="game"></app-number-selector>
+</div>

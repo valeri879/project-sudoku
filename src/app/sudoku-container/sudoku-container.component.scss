@@ -1,0 +1,23 @@
+.app-sudoku-container {
+
+  .buttons {
+    display: flex;
+    flex-flow: row;
+
+    text-align: center;
+    padding: 4px 0;
+    width: 400px;
+    margin: 0 auto;
+
+    .left-buttons {
+      text-align: left;
+      flex: 1 0 auto;
+    }
+
+    .right-buttons {
+      float: 0 1 auto;
+    }
+
+  }
+
+}

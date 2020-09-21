@@ -1,0 +1,13 @@
+.number-selector {
+  width: 400px;
+  display: flex;
+  flex-flow: row;
+  margin: 10px auto;
+  text-align: center;
+
+  .numeral {
+    flex: 1;
+    border: 1px solid black;
+  }
+
+}
